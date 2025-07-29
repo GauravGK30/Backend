@@ -41,5 +41,7 @@ console.log(fs.statSync("./test.txt"));
 //make directory
 fs.mkdirSync('myDocs/a/abcd.txt',{recursive: true});
 
+
+//delete directory
 fs.rmdirSync('./myDocs',{recursive:true});
 // The node:fs module enables interacting with the file system in a way modeled on standard POSIX functions.
