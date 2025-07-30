@@ -8,4 +8,6 @@
   1753883725211: GET /about new request received
   1753883734370: GET /Signup new request received
   1753883749821: GET / new request received
+  1753884318959: GET /about new request received
+  1753884325070: GET /Signup new request received
  
