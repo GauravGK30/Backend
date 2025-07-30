@@ -5,7 +5,7 @@ const os = require('os');
 fs.writeFileSync('./test2.txt',"hello world");
 
 //async... Non-Blocking request
-fs.writeFile('.test2.txt',"hello world async ",(err)=>{});
+fs.writeFile('./test2.txt',"hello world async ",(err)=>{});
 
 //blocking  1-->contact.txt-->2
 
