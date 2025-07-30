@@ -2,5 +2,6 @@ node_modules/
 *.log
 contact.txt
 log.txt
+log2.txt
 test.txt
 test2.txt
