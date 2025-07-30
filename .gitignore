@@ -1,4 +1,6 @@
 node_modules/
 *.log
+contact.txt
+log.txt
 test.txt
 test2.txt
