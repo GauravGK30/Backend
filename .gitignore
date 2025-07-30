@@ -1,0 +1,4 @@
+node_modules/
+*.log
+test.txt
+test2.txt
