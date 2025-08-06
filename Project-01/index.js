@@ -6,7 +6,7 @@ const app= express();
 const PORT = 8000;
 
 //middleware plugin
-// app.use(express.json());
+app.use(express.json());
 // app.use(express.urlencoded({extended:false}))
 
 app.use((req,res,next)=>{
@@ -51,11 +51,14 @@ app.get('/api/users',(req,res)=>{
 
 app.post('/api/users',(req,res)=>{
     const body = req.body;
+    if(!body || !body.first_name || !body.last_name || !body.email || !body.gender || !body.jobTitle){
+        return res.status(400).json({msg: "all feild required"});
+    }
     console.log("Body:",body);
     users.push({...body, id:`${users.length+13}`});
     try {
-        fs.writeFileSync('./Project-01/MOCK_DATA.json', JSON.stringify(users));
-        res.json({ status: "success" });
+        fs.writeFileSync('./MOCK_DATA.json', JSON.stringify(users));
+        res.status(201).json({ status: "success" });
     } catch (err) {
         console.error("File write error:", err);
         res.status(500).json({ status: "error", message: "Could not write to file" });
@@ -100,7 +103,7 @@ app.route('/api/users/:id')
     users[userIndex] = { ...users[userIndex], ...updatedFields };
 
     try {
-        fs.writeFileSync('./Project-01/MOCK_DATA.json', JSON.stringify(users, null, 2));
+        fs.writeFileSync('./MOCK_DATA.json', JSON.stringify(users, null, 2));
         res.json({ status: "success", user: users[userIndex] });
     } catch (err) {
         console.error("File write error:", err);
@@ -118,8 +121,8 @@ app.route('/api/users/:id')
 
     try {
         users = updatedUsers; 
-        fs.writeFileSync('./Project-01/MOCK_DATA.json', JSON.stringify(users, null, 2));
-        res.json({ status: "success", message: `User ${userId} deleted` });
+        fs.writeFileSync('.MOCK_DATA.json', JSON.stringify(users, null, 2));
+        res.json({ status: "success", message: `User ${id} deleted` });
     } catch (err) {
         console.error("File write error:", err);
         res.status(500).json({ status: "error", message: "Could not write to file" });

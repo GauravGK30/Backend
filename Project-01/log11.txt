@@ -9,3 +9,15 @@
 1754487417407: GET: /api/users 
 1754487552321: GET: /api/users 
 1754487620177: GET: /api/users 
+1754487980939: GET: /api/users 
+1754488002468: GET: /api/users/12 
+1754488035265: POST: /api/users 
+1754488119512: POST: /api/users 
+1754488133910: POST: /api/users 
+1754488142753: POST: /api/users 
+1754488173727: POST: /api/users 
+1754488202103: POST: /api/users 
+1754488371205: POST: /api/users 
+1754488500441: GET: /api/users 
+1754488505470: POST: /api/users 
+1754488539169: POST: /api/users 
