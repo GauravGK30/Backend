@@ -6,8 +6,27 @@ const app= express();
 const PORT = 8000;
 
 //middleware plugin
-app.use(express.json());
-app.use(express.urlencoded({extended:false}))
+// app.use(express.json());
+// app.use(express.urlencoded({extended:false}))
+
+app.use((req,res,next)=>{
+    console.log("hello from middleware 1 ");
+    req.myUserName = "gauravgk" ;
+    // return res.json({msg: "hello from middleware 1 "});
+    next();
+})
+
+
+app.use((req,res,next)=>{
+    fs.appendFile('./Project-01/log11.txt',`${Date.now()}: ${req.method}: ${req.path} \n`,
+    (err,data)=>{
+        next();
+    }
+    );
+    console.log("hello from middleware 2 ",req.myUserName); 
+    // return res.end("heyy bro");
+    // next();   //to go for next middleware
+})
 
 //html 
 app.get('/users',(req,res)=>{
