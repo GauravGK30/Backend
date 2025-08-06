@@ -42,6 +42,9 @@ app.get('/users',(req,res)=>{
 //Routes
 //rest api
 app.get('/api/users',(req,res)=>{
+    res.setHeader("x-MyName","gaurav gk");
+    //always add x to custom header
+    // console.log(req.headers);
     return res.json(users);
 })
 
