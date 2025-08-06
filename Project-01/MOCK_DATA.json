@@ -1,21 +1,5 @@
 [
   {
-    "id": "432",
-    "first_name": "Timmothy",
-    "last_name": "Emard",
-    "email": "Emmanuel.Kertzmann41@yahoo.com",
-    "gender": "female",
-    "jobTitle": "Lead Data Administrator"
-  },
-  {
-    "id": "228",
-    "first_name": "Denis",
-    "last_name": "Glover",
-    "email": "Forest_Gerhold58@hotmail.com",
-    "gender": "female",
-    "jobTitle": "Senior Metrics Producer"
-  },
-  {
     "id": "670",
     "first_name": "Delmer",
     "last_name": "Hahn",
@@ -174,14 +158,6 @@
     "email": "Ocie_Braun17@hotmail.com",
     "gender": "female",
     "jobTitle": "Customer Configuration Consultant"
-  },
-  {
-    "id": "521",
-    "first_name": "Amie",
-    "last_name": "Robel",
-    "email": "Hayley.Walker@hotmail.com",
-    "gender": "female",
-    "jobTitle": "Investor Quality Designer"
   },
   {
     "id": "558",
@@ -1256,14 +1232,6 @@
     "jobTitle": "Chief Markets Representative"
   },
   {
-    "id": "228",
-    "first_name": "Gus",
-    "last_name": "Howe",
-    "email": "Freddy15@yahoo.com",
-    "gender": "male",
-    "jobTitle": "Global Optimization Orchestrator"
-  },
-  {
     "id": "251",
     "first_name": "Ferne",
     "last_name": "Pollich",
@@ -2062,14 +2030,6 @@
     "email": "Celine.Spencer3@gmail.com",
     "gender": "male",
     "jobTitle": "Regional Communications Planner"
-  },
-  {
-    "id": "508",
-    "first_name": "Mariana",
-    "last_name": "Armstrong",
-    "email": "Keshaun20@yahoo.com",
-    "gender": "male",
-    "jobTitle": "Corporate Division Analyst"
   },
   {
     "id": "518",
@@ -4046,21 +4006,5 @@
     "gender": "Male",
     "jobTitle": "Software Dev",
     "id": "507"
-  },
-  {
-    "first_name": "naman",
-    "last_name": "Kunath",
-    "email": "nk123@gmail.com",
-    "gender": "Male",
-    "jobTitle": "DEv ops",
-    "id": "508"
-  },
-  {
-    "first_name": "naman2",
-    "last_name": "Kunath",
-    "email": "nk123@gmail.com",
-    "gender": "Male",
-    "jobTitle": "DEv ops",
-    "id": "508"
   }
 ]
