@@ -1,6 +1,4 @@
-// const sessionIdToUserMap = new Map();
-
-const {jwtSecret} = require('../../config/secrets');
+const {jwtSecret} = require('../config/secrets');
 const jwt = require('jsonwebtoken');
 
 function setUser(user){
@@ -23,14 +21,6 @@ function getUser(token){
 
 }
 
-
-// function setUser(sessionId,user){
-//     sessionIdToUserMap.set(sessionId,user);
-// }
-
-// function getUser(sessionId){
-//     return sessionIdToUserMap.get(sessionId);
-// }
 
 module.exports ={
     setUser,
