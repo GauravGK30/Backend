@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+config/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+
+# MongoDB data (if you're storing locally)
+*.db
+*.lock
+
+# Optional: coverage reports
+coverage/
